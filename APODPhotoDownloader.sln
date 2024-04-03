@@ -9,8 +9,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NASAPhotoDownloader", "NASA
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NASAPhotoDownloaderUnitTest", "NASAPhotoDownloaderUnitTest\NASAPhotoDownloaderUnitTest.csproj", "{EDB92FFE-387E-4102-8487-A3A74406FE38}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShowNasaPictures", "ShowNasaPictures\ShowNasaPictures.csproj", "{59B6885D-9EB4-4F4A-8720-7C0D86AE1301}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NASAPicturesAPI", "NASAPicturesAPI\NASAPicturesAPI.csproj", "{6626D0CE-C4F9-48C8-BE81-8BB912FE98E8}"
 EndProject
 Global
@@ -31,10 +29,6 @@ Global
 		{EDB92FFE-387E-4102-8487-A3A74406FE38}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EDB92FFE-387E-4102-8487-A3A74406FE38}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EDB92FFE-387E-4102-8487-A3A74406FE38}.Release|Any CPU.Build.0 = Release|Any CPU
-		{59B6885D-9EB4-4F4A-8720-7C0D86AE1301}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{59B6885D-9EB4-4F4A-8720-7C0D86AE1301}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{59B6885D-9EB4-4F4A-8720-7C0D86AE1301}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{59B6885D-9EB4-4F4A-8720-7C0D86AE1301}.Release|Any CPU.Build.0 = Release|Any CPU
 		{6626D0CE-C4F9-48C8-BE81-8BB912FE98E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{6626D0CE-C4F9-48C8-BE81-8BB912FE98E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6626D0CE-C4F9-48C8-BE81-8BB912FE98E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
