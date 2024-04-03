@@ -10,3 +10,5 @@
 /bin/Debug/net7.0
 /obj
 /.vs/APODPhotoDownloader/v17
+/NASADataApi/bin/Debug/net7.0
+/NASADataApi/obj
