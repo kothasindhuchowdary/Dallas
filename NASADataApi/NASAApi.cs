@@ -5,7 +5,12 @@ using Newtonsoft.Json;
 
 namespace NASADataApi
 {
-    public class NASAApi
+    public interface INASAApi
+    {
+        Task<NASADM> GetImagesByDateAsync(DateTime date);
+    }
+
+    public class NASAApi : INASAApi
     {
         const string nasaApodUrl = "https://api.nasa.gov/planetary/apod?api_key=oHneS2DMNT9l0ZyMwn6xNgngXMHBpX94dGrnU58Q&date=";
 

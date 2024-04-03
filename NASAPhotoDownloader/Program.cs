@@ -4,6 +4,8 @@ using System.Net.Http;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
 using NASADataApi;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Http;
 
 namespace NASAPhotoDownloader
 {
@@ -12,6 +14,15 @@ namespace NASAPhotoDownloader
         static async Task Main(string[] args)
         {
             Console.WriteLine("Start downloading...");
+            // Setup DI container
+            var serviceCollection = new ServiceCollection();
+            serviceCollection.AddHttpClient<INASAApi, NASAApi>();
+
+            // Build service provider
+            var serviceProvider = serviceCollection.BuildServiceProvider();
+
+            // Resolve NASAApi instance from DI container
+            var nasaApi = serviceProvider.GetRequiredService<INASAApi>();
             await DownloadFilesAsync();
             Console.WriteLine("Download completed.");
         }

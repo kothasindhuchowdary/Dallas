@@ -12,3 +12,4 @@
 /.vs/APODPhotoDownloader/v17
 /NASADataApi/bin/Debug/net7.0
 /NASADataApi/obj
+/NASAPhotoDownloaderUnitTest/obj
