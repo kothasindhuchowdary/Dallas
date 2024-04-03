@@ -20,7 +20,7 @@ namespace APODPhotoDownloader
                     {
                         if (context.Request.Method == "POST" && context.Request.Path == "/process")
                         {
-                            string apiKey = "DEMO_KEY"; // Replace with your NASA API key
+                            string apiKey = "kdfcS4uXX7EmqkLrnz2WlgX4vUnPgvk4EHmPyBgb"; // Replace with your NASA API key
                             string date = context.Request.Form["date"];
                             string imageUrl = await GetAPODImageUrl(apiKey, date);
                             await context.Response.WriteAsync(imageUrl);
