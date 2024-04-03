@@ -12,7 +12,7 @@ namespace NASADataApi
 
     public class NASAApi : INASAApi
     {
-        const string nasaApodUrl = "https://api.nasa.gov/planetary/apod?api_key=demokey";
+        const string nasaApodUrl = "https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY&date=";
 
         private readonly HttpClient _httpClient;
 
