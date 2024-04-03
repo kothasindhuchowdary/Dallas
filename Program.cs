@@ -14,6 +14,7 @@ namespace APODPhotoDownloader
             Console.WriteLine("Start downloading...");
             await DownloadFilesAsync();
             Console.WriteLine("Download completed.");
+
         }
 
         static async Task DownloadFilesAsync()
