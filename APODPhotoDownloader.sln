@@ -3,9 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.002.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "APODPhotoDownloader", "APODPhotoDownloader.csproj", "{03FEC8B0-2397-4968-9B98-25F342184278}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NASADataApi", "NASADataApi\NASADataApi.csproj", "{A95F6BC1-9124-4196-8D44-B68659BA59C7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NASADataApi", "..\NASADataApi\NASADataApi.csproj", "{464B4927-3BCF-4BE4-BC2B-4AB139633FB0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NASAPhotoDownloader", "NASAPhotoDownloader\NASAPhotoDownloader.csproj", "{352E26E5-EFC7-49D7-B672-182B1A5E42F6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NASAPhotoDownloaderUnitTest", "NASAPhotoDownloaderUnitTest\NASAPhotoDownloaderUnitTest.csproj", "{EDB92FFE-387E-4102-8487-A3A74406FE38}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShowNasaPictures", "ShowNasaPictures\ShowNasaPictures.csproj", "{59B6885D-9EB4-4F4A-8720-7C0D86AE1301}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,14 +17,22 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{03FEC8B0-2397-4968-9B98-25F342184278}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{03FEC8B0-2397-4968-9B98-25F342184278}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{03FEC8B0-2397-4968-9B98-25F342184278}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{03FEC8B0-2397-4968-9B98-25F342184278}.Release|Any CPU.Build.0 = Release|Any CPU
-		{464B4927-3BCF-4BE4-BC2B-4AB139633FB0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{464B4927-3BCF-4BE4-BC2B-4AB139633FB0}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{464B4927-3BCF-4BE4-BC2B-4AB139633FB0}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{464B4927-3BCF-4BE4-BC2B-4AB139633FB0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A95F6BC1-9124-4196-8D44-B68659BA59C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A95F6BC1-9124-4196-8D44-B68659BA59C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A95F6BC1-9124-4196-8D44-B68659BA59C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A95F6BC1-9124-4196-8D44-B68659BA59C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{352E26E5-EFC7-49D7-B672-182B1A5E42F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{352E26E5-EFC7-49D7-B672-182B1A5E42F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{352E26E5-EFC7-49D7-B672-182B1A5E42F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{352E26E5-EFC7-49D7-B672-182B1A5E42F6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EDB92FFE-387E-4102-8487-A3A74406FE38}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EDB92FFE-387E-4102-8487-A3A74406FE38}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EDB92FFE-387E-4102-8487-A3A74406FE38}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EDB92FFE-387E-4102-8487-A3A74406FE38}.Release|Any CPU.Build.0 = Release|Any CPU
+		{59B6885D-9EB4-4F4A-8720-7C0D86AE1301}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{59B6885D-9EB4-4F4A-8720-7C0D86AE1301}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{59B6885D-9EB4-4F4A-8720-7C0D86AE1301}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{59B6885D-9EB4-4F4A-8720-7C0D86AE1301}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,0 +1,20 @@
+<h1>Nasa Pictures</h1>
+
+<p>Shows NASA pictures</p>
+
+<p *ngIf="!nasaData"><em>Loading...</em></p>
+
+<table class='table' *ngIf="nasaData">
+  <thead>
+    <tr>
+      <th>Date</th>
+      <th>Picture</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let nasaApodData of nasaData">
+      <td>{{ nasaApodData.date }}</td>
+      <td><img width="300px" src="{{ nasaApodData.url }}" /></td>
+    </tr>
+  </tbody>
+</table>
