@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Astronomy Picture of the Day</title>
+</head>
+<body>
+    <form id="dateForm">
+        <label for="dateInput">Select date:</label>
+        <input type="date" id="dateInput" name="date">
+        <button type="submit">Fetch APOD</button>
+    </form>
+
+    <div id="result"></div>
+
+    <script>
+        document.getElementById('dateForm').addEventListener('submit', async function(event) {
+            event.preventDefault();
+            const formData = new FormData(this);
+            const response = await fetch('/process', {
+                method: 'POST',
+                body: formData
+            });
+            const imageUrl = await response.text();
+            document.getElementById('result').innerHTML = `<img src="${imageUrl}" alt="APOD">`;
+        });
+    </script>
+</body>
+</html>

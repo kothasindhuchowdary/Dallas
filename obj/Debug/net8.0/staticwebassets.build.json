@@ -1,0 +1,39 @@
+{
+  "Version": 1,
+  "Hash": "0qRABcrpHd1NCGvg7upWVHTsBkkYnktJxMUh2JhhdaY=",
+  "Source": "APODPhotoDownloader",
+  "BasePath": "_content/APODPhotoDownloader",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "APODPhotoDownloader\\wwwroot",
+      "Source": "APODPhotoDownloader",
+      "ContentRoot": "C:\\Users\\Dedu\\Downloads\\Dallas-main\\Dallas-main\\APODPhotoDownloader\\wwwroot\\",
+      "BasePath": "_content/APODPhotoDownloader",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\Dedu\\Downloads\\Dallas-main\\Dallas-main\\APODPhotoDownloader\\wwwroot\\index.html",
+      "SourceId": "APODPhotoDownloader",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Dedu\\Downloads\\Dallas-main\\Dallas-main\\APODPhotoDownloader\\wwwroot\\",
+      "BasePath": "_content/APODPhotoDownloader",
+      "RelativePath": "index.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\index.html"
+    }
+  ]
+}
