@@ -1,10 +1,9 @@
-using Microsoft.AspNetCore.Builder;
-using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Http;
+using System;
 using System.IO;
 using System.Net.Http;
 using System.Threading.Tasks;
-using Newtonsoft.Json.Linq;
+using Newtonsoft.Json;
+using NASADataApi;
 
 namespace APODPhotoDownloader
 {
@@ -12,56 +11,50 @@ namespace APODPhotoDownloader
     {
         static async Task Main(string[] args)
         {
-            var host = new WebHostBuilder()
-                .UseKestrel()
-                .Configure(app =>
-                {
-                    app.Run(async context =>
-                    {
-                        if (context.Request.Method == "POST" && context.Request.Path == "/process")
-                        {
-                            string apiKey = "kdfcS4uXX7EmqkLrnz2WlgX4vUnPgvk4EHmPyBgb"; // Replace with your NASA API key
-                            string date = context.Request.Form["date"];
-                            string imageUrl = await GetAPODImageUrl(apiKey, date);
-                            await context.Response.WriteAsync(imageUrl);
-                        }
-                        else
-                        {
-                            string indexHtmlPath = Path.Combine(Directory.GetCurrentDirectory(), "index.html");
-                            string htmlContent = await File.ReadAllTextAsync(indexHtmlPath);
-                            context.Response.ContentType = "text/html";
-                            await context.Response.WriteAsync(htmlContent);
-                        }
-                    });
-                })
-                .Build();
+            Console.WriteLine("Start downloading...");
+            await DownloadFilesAsync();
+            Console.WriteLine("Download completed.");
 
-            await host.RunAsync();
         }
 
-        static async Task<string> GetAPODImageUrl(string apiKey, string date)
+        static async Task DownloadFilesAsync()
         {
-            using (var httpClient = new HttpClient())
+            var nasaapi = new NASAApi();
+            NASADM data;
+
+            using (var fileStream = new FileStream("dates.txt", FileMode.Open))
+            using (var reader = new StreamReader(fileStream))
             {
-                string url = $"https://api.nasa.gov/planetary/apod?date={date}&api_key={apiKey}";
-
-                try
+                while (!reader.EndOfStream)
                 {
-                    var response = await httpClient.GetAsync(url);
-                    response.EnsureSuccessStatusCode();
+                    string line = await reader.ReadLineAsync();
 
-                    var responseBody = await response.Content.ReadAsStringAsync();
+                    DateTime? date = DateParser.ParseDate(line);
+                    if (date != null)
+                    {
+                        data = await nasaapi.GetImagesByDateAsync((DateTime)date);
 
-                    // Parse JSON response and extract image URL
-                    JObject responseObject = JObject.Parse(responseBody);
-                    string imageUrl = responseObject["url"].ToString();
+                        if (!string.IsNullOrEmpty(data.url))
+                        {
+                            using (HttpClient client = new HttpClient())
+                            {
+                                using (var response = await client.GetAsync(data.url))
+                                {
+                                    response.EnsureSuccessStatusCode();
 
-                    return imageUrl;
-                }
-                catch (HttpRequestException e)
-                {
-                    Console.WriteLine($"Error calling NASA API: {e.Message}");
-                    return null;
+                                    Directory.CreateDirectory("DownloadedImages");
+                                    string fileName = $"{data.date.Year}-{data.date.Month:D2}-{data.date.Day:D2}.jpg";
+                                    string filePath = Path.Combine("DownloadedImages", fileName);
+
+                                    using (var fileStreamInner = new FileStream(filePath, FileMode.Create))
+                                    {
+                                        await response.Content.CopyToAsync(fileStreamInner);
+                                    }
+
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }
