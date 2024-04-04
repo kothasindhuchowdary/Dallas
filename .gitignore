@@ -1,0 +1,17 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/obj/Debug
+/DownloadedImages
+/.vs/APODPhotoDownloader/FileContentIndex
+/.vs/APODPhotoDownloader/config
+/.vs/ProjectEvaluation
+/bin/Debug/net7.0
+/obj
+/.vs/APODPhotoDownloader/v17
+/NASADataApi/bin/Debug/net7.0
+/NASADataApi/obj
+/NASAPhotoDownloaderUnitTest/obj
+/NASAPhotoDownloaderUnitTest/bin/Debug/net7.0
+/.vs/NASAPicturesAPI
