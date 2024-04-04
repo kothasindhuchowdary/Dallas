@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\sowmy\\source\\repos\\Dallas\\NASAPicturesAPI\\NASAPicturesAPI.csproj": {}
+    "C:\\Users\\sowmy\\source\\repos\\Dallas-New\\NASAPicturesAPI\\NASAPicturesAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\sowmy\\source\\repos\\Dallas\\NASADataApi\\NASADataApi.csproj": {
+    "C:\\Users\\sowmy\\source\\repos\\Dallas-New\\NASADataApi\\NASADataApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\sowmy\\source\\repos\\Dallas\\NASADataApi\\NASADataApi.csproj",
+        "projectUniqueName": "C:\\Users\\sowmy\\source\\repos\\Dallas-New\\NASADataApi\\NASADataApi.csproj",
         "projectName": "NASADataApi",
-        "projectPath": "C:\\Users\\sowmy\\source\\repos\\Dallas\\NASADataApi\\NASADataApi.csproj",
+        "projectPath": "C:\\Users\\sowmy\\source\\repos\\Dallas-New\\NASADataApi\\NASADataApi.csproj",
         "packagesPath": "C:\\Users\\sowmy\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\sowmy\\source\\repos\\Dallas\\NASADataApi\\obj\\",
+        "outputPath": "C:\\Users\\sowmy\\Source\\Repos\\Dallas-New\\NASADataApi\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -70,14 +70,14 @@
         }
       }
     },
-    "C:\\Users\\sowmy\\source\\repos\\Dallas\\NASAPicturesAPI\\NASAPicturesAPI.csproj": {
+    "C:\\Users\\sowmy\\source\\repos\\Dallas-New\\NASAPicturesAPI\\NASAPicturesAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\sowmy\\source\\repos\\Dallas\\NASAPicturesAPI\\NASAPicturesAPI.csproj",
+        "projectUniqueName": "C:\\Users\\sowmy\\source\\repos\\Dallas-New\\NASAPicturesAPI\\NASAPicturesAPI.csproj",
         "projectName": "NASAPicturesAPI",
-        "projectPath": "C:\\Users\\sowmy\\source\\repos\\Dallas\\NASAPicturesAPI\\NASAPicturesAPI.csproj",
+        "projectPath": "C:\\Users\\sowmy\\source\\repos\\Dallas-New\\NASAPicturesAPI\\NASAPicturesAPI.csproj",
         "packagesPath": "C:\\Users\\sowmy\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\sowmy\\source\\repos\\Dallas\\NASAPicturesAPI\\obj\\",
+        "outputPath": "C:\\Users\\sowmy\\source\\repos\\Dallas-New\\NASAPicturesAPI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -99,8 +99,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\sowmy\\source\\repos\\Dallas\\NASADataApi\\NASADataApi.csproj": {
-                "projectPath": "C:\\Users\\sowmy\\source\\repos\\Dallas\\NASADataApi\\NASADataApi.csproj"
+              "C:\\Users\\sowmy\\source\\repos\\Dallas-New\\NASADataApi\\NASADataApi.csproj": {
+                "projectPath": "C:\\Users\\sowmy\\source\\repos\\Dallas-New\\NASADataApi\\NASADataApi.csproj"
               }
             }
           }

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("NASAPhotoDownloader")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+828d0ac1c38c2b557ea7b9f8a902e9069885ee1e")]
 [assembly: System.Reflection.AssemblyProductAttribute("NASAPhotoDownloader")]
 [assembly: System.Reflection.AssemblyTitleAttribute("NASAPhotoDownloader")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Net.Http;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
@@ -12,7 +12,7 @@ namespace NASADataApi
 
     public class NASAApi : INASAApi
     {
-        const string nasaApodUrl = "https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY&date=";
+        const string nasaApodUrl = "https://api.nasa.gov/planetary/apod?api_key=kdfcS4uXX7EmqkLrnz2WlgX4vUnPgvk4EHmPyBgb&date=";
 
         private readonly HttpClient _httpClient;
 

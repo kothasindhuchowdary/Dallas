@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("NASAPicturesAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c6e1107bfe5a692379074d5d1c9e131f94acbbd2")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+828d0ac1c38c2b557ea7b9f8a902e9069885ee1e")]
 [assembly: System.Reflection.AssemblyProductAttribute("NASAPicturesAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("NASAPicturesAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
