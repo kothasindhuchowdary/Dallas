@@ -6,19 +6,19 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                bat 'make' // Use 'bat' for Windows shell commands
+                echo 'hi ,in Build'
             }
         }
         stage('Test'){
             steps {
-                bat 'make check' // Use 'bat' for Windows shell commands
+                echo 'hi , in test'
             }
         }
         stage('Deploy') {
             steps {
-                bat 'make publish' // Use 'bat' for Windows shell commands
+                echo 'hi , in deploy'
             }
         }
     }
-}
+} 
 
